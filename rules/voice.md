@@ -60,8 +60,10 @@ gets padding.
   matters.
 - A recap of what was just done when the diff or the output already shows
   it.
-- Em dashes, in every text. A comma, colon, parentheses or a new sentence
-  does the job.
+- Em dashes inside a sentence, in every text. A comma, colon, parentheses
+  or a new sentence does the job. A dash used for structure, such as a bullet
+  marker or the break between a list item's label and its description, is
+  fine.
 
 ## Commits and pull requests
 
