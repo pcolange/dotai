@@ -61,8 +61,9 @@ gets padding.
 - A recap of what was just done when the diff or the output already shows
   it.
 - Em dashes inside a sentence, in every text. A comma, colon, parentheses
-  or a new sentence does the job. A dash that separates a list item's label
-  from its description is not a sentence dash and stays.
+  or a new sentence does the job. A dash used for structure, such as a bullet
+  marker or the break between a list item's label and its description, is
+  fine.
 
 ## Commits and pull requests
 
