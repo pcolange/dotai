@@ -12,6 +12,13 @@ history rewrite to undo. Look at `git status --short`, then name each file
 the change touched. `git add -u` is fine only when every modified file is
 provably part of the change and nothing untracked belongs in it.
 
+## Name the branch for the change
+
+A branch is named for the feature or fix it carries, in lowercase words
+joined by hyphens: `pr-description-rules`, not `claude/dreamy-feynman-6c5vfn`.
+A name the tooling generates is replaced with one like that before the
+first push.
+
 ## Keep safe commands off the prompt
 
 This is about read-only commands and edits inside the workspace: status
