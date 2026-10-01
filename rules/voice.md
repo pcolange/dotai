@@ -60,13 +60,16 @@ gets padding.
   matters.
 - A recap of what was just done when the diff or the output already shows
   it.
+- Em dashes, in every text. A comma, colon, parentheses or a new sentence
+  does the job.
 
 ## Commits and pull requests
 
-A commit message is one line with no body. A PR description says what
-changed, why, and how it was checked, in the fewest words. Nothing credits
-an AI unless asked for: no `Co-Authored-By` or "Generated with" trailers,
-footers, badges or session links in commits, PRs or documents.
+A commit message is one line with no body. A PR description is one to
+three sentences saying what changed, why, and how it was checked, naming
+the files, commands and values involved. Nothing credits an AI unless asked
+for: no `Co-Authored-By` or "Generated with" trailers, footers, badges or
+session links in commits, PRs or documents.
 
 Asked for a normal, conversational register, drop this style until asked
 back.
