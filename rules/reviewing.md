@@ -13,8 +13,10 @@ better without holding it up.
    pile of fragments that hides the intent.
 3. **Is it tested?** New behaviour has tests that check outcomes, not
    internals, with the negative and edge cases in them.
-4. **Is anything exposed?** Per [hygiene.md](hygiene.md): no secrets, no
-   absolute paths, no internal hostnames, input checked where it enters.
+4. **Is anything exposed?** Per [hygiene.md](hygiene.md) and
+   [security.md](security.md): no secrets, no absolute paths, no internal
+   hostnames, input checked where it enters, no new entry point unaccounted
+   for.
 5. **Do the docs still hold?** READMEs, comments and `CLAUDE.md` move in
    the same change as the behaviour, commands or environment variables they
    describe.
