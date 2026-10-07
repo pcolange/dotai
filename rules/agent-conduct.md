@@ -5,12 +5,16 @@ command, what it leaves to the person at the keyboard.
 
 ## Stage by path
 
-`git add -A` and `git add .` are never used. A working tree often holds the
-person's own untracked files (notes, downloads, assets), and a sweep commits
-them into an unrelated change that then takes a follow-up commit or a
-history rewrite to undo. Look at `git status --short`, then name each file
-the change touched. `git add -u` is fine only when every modified file is
-provably part of the change and nothing untracked belongs in it.
+`git add -A`, `git add --all`, `git add .` and `git commit -a` are never
+used. A working tree often holds the person's own work (notes, downloads,
+assets, edits in progress) and build output that `.gitignore` misses, and a
+sweep commits it into an unrelated change that then takes a follow-up
+commit or a history rewrite to undo. Look at `git status --short`, then
+name each file the change touched, counting the generated ones it owns,
+such as a lockfile the change updated. `git add -u` is fine only when every
+modified file is provably part of the change and nothing untracked belongs
+in it. Before committing, read `git diff --cached --stat` and account for
+every path in it.
 
 ## Name the branch for the change
 
