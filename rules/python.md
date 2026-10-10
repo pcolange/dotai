@@ -5,14 +5,13 @@ paths:
 
 # Python
 
-For `tessera_search` and any other Python in the repo, on top of
-`engineering.md`.
+On top of `engineering.md`.
 
 ## Let the tools decide
 
 `pyproject.toml` configures them and wins: pyright strict, ruff for lint,
 format and imports. What they check is not checked by hand, and their
-configured exceptions stand (docstrings are optional here; `D10x` is off).
+configured exceptions stand.
 Every signature is annotated, arguments and return. `uv run ruff check` and
 `uv run pyright` pass before the work is called done.
 
@@ -35,6 +34,5 @@ Every signature is annotated, arguments and return. `uv run ruff check` and
 
 ## Output
 
-The `tessera_search` console scripts are CLIs: `print()` is their
-interface. Anything diagnostic from library code goes to a module-level
+A console script is a CLI: `print()` is its interface. Anything diagnostic from library code goes to a module-level
 stdlib `logging` logger at the right level, never to `print()`.
